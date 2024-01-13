@@ -42,7 +42,7 @@ public class StatsService {
         long avg = avgSales(sales);
         int count = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < avgSales(sales)) {
+            if (sales[i] < avg) {
                 count++;
             }
         }
